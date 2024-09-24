@@ -4,7 +4,7 @@ import Builder.Conjunto.Alimentacao;
 import Builder.Conjunto.Roupa;
 import Builder.Conjunto.TV;
 
-public class PessoaBuilderRotina implements Rotina{
+public class PessoaBuilderRotina implements Builder {
     private Roupa roupa;
     private Alimentacao alimento;
     private TV controle;

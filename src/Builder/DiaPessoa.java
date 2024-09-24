@@ -3,18 +3,18 @@ package Builder;
 import Builder.Conjunto.Alimentacao;
 import Builder.Conjunto.Roupa;
 import Builder.Conjunto.TV;
-import Builder.pessoa.Rotina;
+import Builder.pessoa.Builder;
 
 public class DiaPessoa {
-    void pessoaDeManha(Rotina rotina){
-        rotina.setRoupa(new Roupa(null,"Calça moleton","Chinelo"));
-        rotina.setAlimento(new Alimentacao("Ovo","Batata Doce","Whey"));
-        rotina.ligarTV(new TV(true,26));
+    void pessoaDeManha(Builder builder){
+        builder.setRoupa(new Roupa(null,"Calça moleton","Chinelo"));
+        builder.setAlimento(new Alimentacao("Ovo","Batata Doce","Whey"));
+        builder.ligarTV(new TV(true,26));
     }
-    void pessoaDeMeioDia(Rotina rotina){
-        rotina.setRoupa(new Roupa("Camisa polo","Calça jeans","sapato social"));
-        rotina.setAlimento(new Alimentacao("Bife",
+    void pessoaDeMeioDia(Builder builder){
+        builder.setRoupa(new Roupa("Camisa polo","Calça jeans","sapato social"));
+        builder.setAlimento(new Alimentacao("Bife",
                 "Arroz, feijão e batata frita","Suco de Laranja"));
-        rotina.ligarTV(new TV(false));
+        builder.ligarTV(new TV(false));
     }
 }
